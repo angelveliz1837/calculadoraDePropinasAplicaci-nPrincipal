@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <title>Frontend Mentor | Tip calculator app</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="titulo_principal">
+    <img src="images/logo.svg" alt="logo">
+  </div>
+  <section class="container">
+    <form class="formulario">
+      <section class="bloque1">
+        <div class="subbloque">
+          <h1 class="titulo">Bill</h1>
+          <div class="input-bloque">
+            <div class="input-icon">
+              <img src="images/icon-dollar.svg" alt="Dollar Icon">
+            </div>
+            <div>
+              <input id="bill" class="input" type="text" placeholder="0"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+
+            </div>
+          </div>
+        </div>
+        <div class="subbloque">
+          <h1 class="titulo">Select Tip %</h1>
+          <div class="cajas">
+            <button type="button" class="caja" data-percent="5">5%</button>
+            <button type="button" class="caja" data-percent="10">10%</button>
+            <button type="button" class="caja" data-percent="15">15%</button>
+            <button type="button" class="caja" data-percent="25">25%</button>
+            <button type="button" class="caja" data-percent="50">50%</button>
+            <input id="custom-tip" class="caja cajadif" type="text" placeholder="Custom"
+              oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+          </div>
+        </div>
+        <div class="subbloque">
+          <h1 class="titulo">Number of People</h1>
+          <div id="pasajero" class="input-bloque">
+            <div class="input-icon">
+              <img src="images/icon-person.svg" alt="Person Icon">
+            </div>
+            <div>
+              <input id="people" class="input" placeholder="0" type="text"
+                oninput="this.value = this.value.replace(/[^0-9]/g, '');">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="bloque2">
+        <div class="cuadro">
+          <div class="texto1">
+            <div>
+              <h2>Tip Amount</h2>
+            </div>
+            <div>
+              <h5>/ person</h5>
+            </div>
+          </div>
+          <div class="texto2">
+            <label id="tip-amount" class="inicio">$0.00</label>
+          </div>
+        </div>
+        <div class="cuadro">
+          <div class="texto1">
+            <div>
+              <h2>Total</h2>
+            </div>
+            <div>
+              <h5>/ person</h5>
+            </div>
+          </div>
+          <div class="texto2">
+            <label id="total" class="inicio">$0.00</label>
+          </div>
+        </div>
+        <div class="boton">
+          <button class="reset" type="submit" id="reset">Reset</button>
+        </div>
+      </section>
+    </form>
+  </section>
+  <section class="error-container hidden">
+    <div class="error">
+      <p>Can't be zero</p>
+      <div class="borde"></div>
+    </div>
+  </section>
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>
+    Coded by <a href="#">Angel Veliz</a>
+  </div>
+</body>
+<script src="script.js"></script>
+
+</html>

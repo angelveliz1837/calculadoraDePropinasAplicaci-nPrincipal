@@ -1,0 +1,271 @@
+body{
+    background-color: hsl(185, 41%, 84%);
+}
+
+.titulo_principal{
+    text-align: center;
+    margin-top: 6em;
+}
+
+.container{
+    background-color: hsl(0, 0%, 100%);
+    margin: 4em 23em 6em 23em;
+    padding: 1.5em;
+    border-radius: 15px;
+}
+
+.formulario {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.bloque1{
+    background-color: hsl(0, 0%, 100%);
+    display: grid;
+    grid-template-rows: auto auto auto;
+    border-radius: 10px;
+    padding: 0em 1em;
+    font-family: "Space Mono", serif;
+}
+
+.titulo{
+    color: hsl(186, 14%, 43%);
+    font-size: 0.8em;
+    font-weight: 700;
+}
+
+.input-bloque{
+    display: grid;
+    grid-template-columns: 10% 90%;
+    border: none;
+    background-color: hsl(189, 41%, 97%);
+    border-radius: 5px;
+    padding: 0em 1em;
+    align-content: center;
+    width: 86%;
+}
+
+.input-icon{
+    align-content: center;
+}
+
+.input-icon img{
+    width: 0.6em;
+}
+
+.input{
+    text-align: end;
+    font-family: "Space Mono", serif;
+    width: 100%;
+    border: none;
+    color: hsl(184, 14%, 56%);
+    background-color: hsl(189, 41%, 97%);
+    font-size: 1.3em;
+    z-index: 10;
+    position: relative;
+    outline: none;
+}
+
+.cajas{
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    grid-template-rows: auto auto;
+    text-align: center;
+    margin-top: -0.5em;
+    margin-left: -0.5em;
+    font-weight: 700;
+}
+
+.cajas button.active{
+    background-color: hsl(172, 67%, 45%);
+}
+
+.caja{
+    background-color: hsl(183, 100%, 15%);
+    margin: 0.5em;
+    padding: 0.2em;
+    border-radius: 5px;
+    color: hsl(0, 0%, 100%);
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.cajadif{
+    background-color: hsl(185, 41%, 84%);
+    color: hsl(183, 100%, 15%);
+}
+
+.bloque2{
+    background-color: hsl(183, 100%, 15%);
+    border-radius: 10px;
+    padding: 2em;
+    font-family: "Space Mono", serif;
+}
+
+.cuadro{
+    display: grid;
+    grid-template-columns: 30% 70%;
+    font-family: "Space Mono", serif;
+    padding: 0em 0em 1em 0em;
+}
+
+.texto1{
+    align-content: center;
+}
+
+.texto1 h2{
+    color: hsl(0, 0%, 100%);
+    font-size: 0.8em;
+    margin-bottom: 0em;
+}
+
+.texto1 h5{
+    color: hsl(184, 14%, 56%);
+    font-size: 0.7em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+}
+
+.texto2{
+    align-content: center;
+    text-align: end;
+}
+
+.texto2 .inicio{
+    background-color: hsl(183, 100%, 15%);
+    color: hsl(172, 67%, 45%);
+    border: none;
+    font-size: 2.6em;
+    font-family: "Space Mono", serif;
+    width: 100%;
+    font-weight: 700;
+}
+
+.boton{
+    margin-top: 6em;
+    text-align: center;
+}
+
+.reset{
+    background-color: hsl(183, 81%, 21%);
+    color: hsl(183, 100%, 15%);
+    padding: 0.8em 0em;
+    width: 100%;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    border: none;
+}
+
+.reset:hover{
+    background-color: hsl(172, 67%, 45%);
+    cursor: pointer;
+}
+
+.error-container{
+    display: relative;
+}
+
+.error{
+    position: absolute;
+    color: red;
+    font-family: "Space Mono", serif;
+    font-weight: 700;
+    left: 630px;
+    top: 500px;
+    font-size: 0.8em;
+}
+
+.borde{
+    padding: 1.3em 12.5em;
+    border: 1.6px solid red;
+    border-radius: 5px;
+    margin-left: -17em;
+    margin-top: -0.5em;
+    z-index: 1;
+    position: relative;
+}
+
+.hidden{
+    display: none;
+}
+
+@media only screen and (max-width: 375px) {
+
+    .titulo_principal{
+        margin: 2em;
+    }
+    
+    .formulario {
+        display: grid;
+        grid-template-columns: 100%;
+        border-radius: 40px;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .container{
+        margin: 0em;
+        padding: 0em;
+        border-bottom-right-radius: 0px;
+        border-bottom-left-radius: 0px;
+    }
+
+    .bloque1{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: auto auto auto;
+        border-radius: 40px;
+        padding: 1em 2em;
+    }
+
+    .subbloque{
+        padding-bottom: 0.5em;
+    }
+
+    .titulo{
+        font-size: 0.9em;
+    }
+
+    .cajas{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: auto auto auto;
+    }
+
+    .caja{
+        padding: 0.4em;
+    }
+
+    .bloque2{
+        margin: 0em 2em 2em 2em;
+        padding: 1em;
+    }
+    
+    .texto2 .inicio{
+        font-size: 1.7em;
+    }
+    
+    .boton{
+        margin-top: 1em;
+    }
+
+    .error{
+        left: 215px;
+        top: 447px;
+        font-size: 0.8em;
+    }
+    
+    .borde{
+        padding: 1.4em 11.2em;
+        margin-left: -14em;
+        margin-top: -0.15em;
+    }
+
+    .hidden{
+        display: none;
+    }
+}
